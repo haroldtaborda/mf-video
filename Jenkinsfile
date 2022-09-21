@@ -6,12 +6,15 @@ pipeline {
     }
    stages { 
     stage('Build') {
-        dir('/footer/mf-footer'){
+        step {
+            dir('/footer/mf-footer'){
             sh "npm install"
         }
          dir('header/mf-header'){
             sh "npm install"
+        }  
         }
+      
     }
     
     stage('Test') {
