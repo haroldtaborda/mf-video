@@ -4,7 +4,7 @@ pipeline {
     tools {
         nodejs "nodejs"
     }
-    
+   stages { 
     stage('Build') {
         dir('footer/mf-footer'){
             sh 'npm install'
@@ -30,5 +30,6 @@ pipeline {
         dir('header/mf-header'){
             sh 'npm start'
         }
-    }
+      }
+   }
 }
