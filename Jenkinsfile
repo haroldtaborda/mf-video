@@ -6,7 +6,7 @@ pipeline {
     }
    stages { 
     stage('Build') {
-        step {
+        steps {
             dir('/footer/mf-footer'){
             sh "npm install"
         }
