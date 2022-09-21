@@ -7,7 +7,9 @@ pipeline {
    stages { 
     stage('Build') {
         steps {
-        sh "pwd"
+        dir('/footer/mf-footer'){
+         sh "pwd"
+         }
         }
     }
     
