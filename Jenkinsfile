@@ -8,7 +8,7 @@ pipeline {
     stage('Build') {
         steps {
         dir('/footer/mf-footer'){
-         sh "pwd"
+          sh "npm install"
          }
         }
     }
