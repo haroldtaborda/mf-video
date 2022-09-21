@@ -5,7 +5,9 @@ pipeline {
         nodejs "nodejs"
     }
    stages { 
+       sh "pwd"
     stage('Build') {
+        sh "pwd"
         steps {
             dir('/footer/mf-footer'){
             sh "npm install"
