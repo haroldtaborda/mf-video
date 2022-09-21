@@ -8,11 +8,9 @@ pipeline {
     stage('Build') {
         dir('footer/mf-footer'){
             sh 'npm install'
-            sh 'ng build'
         }
          dir('header/mf-header'){
             sh 'npm install'
-            sh 'ng build'
         }
     }
     
