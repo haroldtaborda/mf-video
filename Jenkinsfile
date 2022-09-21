@@ -7,6 +7,7 @@ pipeline {
    stages { 
     stage('Build') {
         steps {
+          sh "chmod -R 777 /footer/mf-footer"
         dir('/footer/mf-footer'){
           sh "npm install"
          }
